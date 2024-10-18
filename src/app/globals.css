@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: var(--body);
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.showScrollBar::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+  display: block;
+  background-color: var(--inputBg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: var(--brand);
+}
